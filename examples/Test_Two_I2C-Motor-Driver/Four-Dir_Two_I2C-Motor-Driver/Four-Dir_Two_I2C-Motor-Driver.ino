@@ -14,8 +14,8 @@ void setup() {
 void loop() {
   bool dirValue = 1;  // Direction (1 or 0)
   unsigned char speedValueInPercent = 0;  // (0%->100%)
-  
-  Serial.println("Đi thẳng tốc độ 100%.");
+
+  //Xe đi thẳng
   dirValue = 1; // Direction 1
   speedValueInPercent = 100; // 100% (Max Speed)  
   myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
@@ -25,37 +25,7 @@ void loop() {
   myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
   delay(5000);
 
-  Serial.println("Đi thẳng tốc độ 75%.");
-  dirValue = 1; // Direction 1
-  speedValueInPercent = 75; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-
-  Serial.println("Đi thẳng tốc độ 60%.");
-  dirValue = 1; // Direction 1
-  speedValueInPercent = 60; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-
-  Serial.println("Đi thẳng tốc độ 50%.");
-  dirValue = 1; // Direction 1
-  speedValueInPercent = 50; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-  
-  Serial.println("Dừng động cơ");
+  //Xe dừng lại
   dirValue = 1; // Direction 1
   speedValueInPercent = 0; // 100% (Max Speed)  
   myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
@@ -64,4 +34,16 @@ void loop() {
   myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
   myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
   delay(2000);
+
+  //Xe đi lùi
+  dirValue = 0; // Direction 0
+  speedValueInPercent = 100; // 100% (Max Speed)  
+  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
+  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
+  //2 bánh sau
+  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
+  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
+  delay(5000);
+
+  
 }
