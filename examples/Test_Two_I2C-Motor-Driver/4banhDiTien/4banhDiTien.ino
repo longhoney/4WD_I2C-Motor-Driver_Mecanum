@@ -68,6 +68,7 @@ void loop() {
   delay(2000);
   */
 
+  /*
   //Tăng tốc dần
   //Đi thẳng tốc độ 50%
   dirValue = 1; // Direction 1
@@ -88,6 +89,7 @@ void loop() {
   myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
   myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
   delay(5000);
+  */
 
   //Đi thẳng tốc độ 100%
   dirValue = 1; // Direction 1
