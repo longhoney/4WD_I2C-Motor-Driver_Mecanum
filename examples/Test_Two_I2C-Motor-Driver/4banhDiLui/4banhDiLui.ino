@@ -25,8 +25,6 @@ void loop() {
   myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
   delay(2000);
   
-  //Giảm tốc dần
-  /*
   //Đi lùi tốc độ 100%.
   dirValue = 0; // Direction 0
   speedValueInPercent = 100; // 100% (Max Speed)  
@@ -37,75 +35,5 @@ void loop() {
   myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
   delay(5000);
 
-  //Đi lùi tốc độ 75%.
-  dirValue = 0; // Direction 0
-  speedValueInPercent = 75; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-
-  //Đi lùi tốc độ 50%.
-  dirValue = 0; // Direction 0
-  speedValueInPercent = 50; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
   
-  //Dừng động cơ
-  dirValue = 1; // Direction 1
-  speedValueInPercent = 0; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(2000);
-  */
- 
-  //Tăng tốc dần
-  //Đi lùi tốc độ 50%.
-  dirValue = 0; // Direction 0
-  speedValueInPercent = 50; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-
-  //Đi lùi tốc độ 75%.
-  dirValue = 0; // Direction 0
-  speedValueInPercent = 75; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-
-  //Đi lùi tốc độ 100%
-  dirValue = 0; // Direction 0
-  speedValueInPercent = 100; // 100% (Max Speed)  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(5000);
-
-  //Dừng động cơ
-  dirValue = 1; // Direction 1
-  speedValueInPercent = 0;  
-  myDriver.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  //2 bánh sau
-  myDriver2.writeMA(dirValue, speedValueInPercent);    // Run motor A max Speed
-  myDriver2.writeMB(dirValue, speedValueInPercent);    // Run motor B max Speed
-  delay(2000);
 }
