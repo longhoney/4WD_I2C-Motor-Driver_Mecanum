@@ -1,9 +1,9 @@
 #include "Makerlabvn_I2C_Motor_Driver.h"
 
-Makerlabvn_I2C_Motor_Driver myDriver(0); //0x64
+Makerlabvn_I2C_Motor_Driver myDriver;
 
 // Declare the second Driver with ID 1
-Makerlabvn_I2C_Motor_Driver myDriver2(1);  //0x65 //To set the ID please use Example "B3_I2C_Driver_Set_ID"
+Makerlabvn_I2C_Motor_Driver myDriver2(1);  // To set the ID please use Example "B3_I2C_Driver_Set_ID"
 
 void setup() {
   // put your setup code here, to run once:
