@@ -8,6 +8,10 @@
 - git commit -m"editted readme"  
 - git push
 
+`Nhắc lại vài thứ trước khi bắt đầu`
+- Mục tiêu khi làm chiếc xe này là gì? Phải trả lời được thì mới không bị lạc hướng
+- Trước khi làm gì, phải suy nghĩ việc mình làm ảnh hưởng đến hệ thống như nào (không phải cứ hư thì đền ...)
+
 `Quy tắc kết nối`
 - Dây cấp nguồn phải to, không được dùng jumper wires --> Phải thay toàn bộ dây, vì sức mạnh của mắt xích yếu nhất cũng là sức mạch của toàn bộ dây chuyền
 
@@ -25,5 +29,3 @@
 
 `Chương trình tham khảo`
 - https://github.com/MinhKhanh614/Mecanum-Car/tree/main 
-
-- Test thu
