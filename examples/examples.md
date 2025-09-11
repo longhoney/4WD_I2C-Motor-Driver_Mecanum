@@ -10,8 +10,13 @@
 `2. Khao sat 4 dong co vang`
 - Tôi test độc lập 4 động cơ (cấp nguồn thông qua mạch MKE-M12) --> Kết quả: phải trên ok, trái trên ok, phải sau ok, trái sau ok.
 - Cách khảo sát động cơ đúng: khảo sát với driver để bảo vệ toàn bộ hệ thống
+- Bỏ qua bước này và nhảy xuống các bước tiếp theo
 
 `3. Khao sat driver tren - 2 banh truoc`
+- Vừa test driver vừa test động cơ
+- Anh Ngọc: "Tầm quan trọng của DIOD đối với các tải cảm: relay, Dc motor, Solenoid Valve, Solenoid Lock, ... Bất kỳ mạch nào có liên quan tải cảm, phải kiếm xem con DIOD nào bị hở chân không nhé!
+Nguồn: https://www.youtube.com/watch?v=LXGtE3X2k7Y"
+
 - Nạp chương trình mẫu từ thư viện "Makerlabvn_I2C_Motor_Driver", địa chỉ i2c: myDriver(0)
 
 `4. Khao sat driver duoi - 2 banh sau`
